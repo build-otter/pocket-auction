@@ -1,4 +1,4 @@
-package make.otter.auctioninventorymanagement.domain;
+package make.otter.auctioninventorymanagement.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.extern.slf4j.Slf4j;

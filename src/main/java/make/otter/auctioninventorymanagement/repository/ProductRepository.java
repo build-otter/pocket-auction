@@ -1,6 +1,6 @@
 package make.otter.auctioninventorymanagement.repository;
 
-import make.otter.auctioninventorymanagement.domain.Products;
+import make.otter.auctioninventorymanagement.domain.entity.Products;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

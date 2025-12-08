@@ -1,7 +1,7 @@
 package make.otter.auctioninventorymanagement.service;
 
 import lombok.RequiredArgsConstructor;
-import make.otter.auctioninventorymanagement.domain.Products;
+import make.otter.auctioninventorymanagement.domain.entity.Products;
 import make.otter.auctioninventorymanagement.repository.ProductRepository;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

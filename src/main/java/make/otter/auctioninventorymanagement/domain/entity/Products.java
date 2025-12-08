@@ -1,14 +1,16 @@
-package make.otter.auctioninventorymanagement.domain;
+package make.otter.auctioninventorymanagement.domain.entity;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import lombok.Getter;
 
 import java.time.LocalDateTime;
 import java.util.Objects;
 
 @Entity
+@Getter
 public class Products {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,6 +30,7 @@ public class Products {
         product.price = price;
         product.description = description;
         product.createdAt = LocalDateTime.now();
+        product.updatedAt = LocalDateTime.now();
         return product;
     }
 

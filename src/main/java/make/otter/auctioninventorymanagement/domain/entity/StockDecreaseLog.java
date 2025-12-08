@@ -1,8 +1,9 @@
-package make.otter.auctioninventorymanagement.domain;
+package make.otter.auctioninventorymanagement.domain.entity;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
+import make.otter.auctioninventorymanagement.domain.StockStatus;
 
 import java.time.LocalDateTime;
 
