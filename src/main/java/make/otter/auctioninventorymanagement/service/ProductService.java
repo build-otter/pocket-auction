@@ -1,6 +1,6 @@
 package make.otter.auctioninventorymanagement.service;
 
-import make.otter.auctioninventorymanagement.domain.Products;
+import make.otter.auctioninventorymanagement.domain.entity.Products;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 
