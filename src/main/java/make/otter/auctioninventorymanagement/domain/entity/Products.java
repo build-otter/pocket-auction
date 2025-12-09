@@ -14,7 +14,7 @@ import java.util.Objects;
 public class Products {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long ProductId;
+    private Long productId;
     private String name;
     private int price;
     private String description;
@@ -45,18 +45,18 @@ public class Products {
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
         Products product = (Products) o;
-        return Objects.equals(ProductId, product.ProductId);
+        return Objects.equals(productId, product.productId);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hashCode(ProductId);
+        return Objects.hashCode(productId);
     }
 
     @Override
     public String toString() {
         return "Product{" +
-                "ProductId=" + ProductId +
+                "ProductId=" + productId +
                 ", name='" + name + '\'' +
                 ", price=" + price +
                 ", description='" + description + '\'' +

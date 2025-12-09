@@ -3,15 +3,12 @@ package make.otter.auctioninventorymanagement.service;
 import jakarta.persistence.EntityManager;
 import jakarta.transaction.Transactional;
 import make.otter.auctioninventorymanagement.domain.entity.Products;
-import make.otter.auctioninventorymanagement.repository.ProductRepository;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
-
-import java.awt.print.Pageable;
 
 @SpringBootTest
 @Transactional

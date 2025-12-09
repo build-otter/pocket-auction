@@ -13,6 +13,7 @@ public class ProductStock {
     private Long stockId;
 
     @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "product_id")
     private Products product;
 
     private int stock;
