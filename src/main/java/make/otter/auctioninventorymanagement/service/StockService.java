@@ -2,6 +2,9 @@ package make.otter.auctioninventorymanagement.service;
 
 
 public interface StockService {
+    void changeStock(Long productId, int stock);
 
-    void decrease(Long productId, int quantity);
+    void decreaseWithPessimisticLock(Long productId, int quantity);
+
+    void decreaseWithOptimisticLock(Long productId, int quantity);
 }

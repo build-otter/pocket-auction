@@ -11,15 +11,15 @@ import org.springframework.stereotype.Repository;
 import java.util.Optional;
 
 @Repository
-public interface StockRepository extends JpaRepository<ProductStock, Long> {
+public interface ProductStockRepository extends JpaRepository<ProductStock, Long> {
 
     @Lock(LockModeType.PESSIMISTIC_WRITE)
     @Query(
             """
-            SELECT p FROM ProductStock p WHERE p.product_id = :productId
+            SELECT ps FROM ProductStock ps WHERE ps.products.productId = :productId
             """
     )
     Optional<ProductStock> findByIdWithXLock(@Param("productId") Long productId);
 
-    Optional<ProductStock> findProductStockByProductId(@Param("productId") Long productId);
+    Optional<ProductStock> findProductStockByProducts_ProductId(@Param("productId") Long productId);
 }
